@@ -44,3 +44,32 @@ for (let i = 0; i < birthRates.length; i++) {
 }
 
 console.log(bestYears)
+
+/// PART 3 
+
+// 1. Create a function that logs the result of adding two numbers that were passed in as arguments.
+// 2. Create another function that logs the result of subtracting two numbers that were passed in as arguments.
+// 3. Invoke each function a couple times with different argument values.
+
+
+function addition (num1, num2) {
+    console.log(num1 + num2);
+}
+
+function subtraction (num1, num2) {
+    console.log(num1 - num2);
+}
+
+
+function calculate(a, b, operator) {
+    return operator(a, b)
+}
+
+
+addition(34, 84);
+addition(88, 22);
+
+subtraction(88, 11);
+subtraction(100, 50);
+
+calculate(98, 10, addition);
