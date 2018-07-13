@@ -12,3 +12,35 @@ function go (direction, mph) {
 }
 
 go("backwards", 85)
+
+
+
+
+/// PART 2 ////
+
+// Given the following set of data about chicken birth rates, you need to filter out the objects where the birth rate value is greater than 15 per 1000 chickens for that year. Store the good years in a new array named `bestYears`.
+
+//this can be rand with a forEach();
+//
+
+const birthRates = [
+  { year: 1969, birthRate: 13}, 
+  { year: 1970, birthRate: 16}, 
+  { year: 1971, birthRate: 15}, 
+  { year: 1972, birthRate: 11}, 
+  { year: 1973, birthRate: 18}, 
+  { year: 1974, birthRate: 17}, 
+  { year: 1975, birthRate: 9}
+]
+
+let bestYears = []
+
+for (let i = 0; i < birthRates.length; i++) {
+    let birthRatesLoop = birthRates[i]
+    if (birthRatesLoop.birthRate > 15) {
+        bestYears.push(birthRatesLoop.year)
+    }
+
+}
+
+console.log(bestYears)
